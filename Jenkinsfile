@@ -22,9 +22,9 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        dir('realworld-cicd-pipeline-project-main/') {
+        //  dir('realworld-cicd-pipeline-project-main/') {
         sh 'mvn clean package'
-        }
+        // }
       }
       post {
         success {
